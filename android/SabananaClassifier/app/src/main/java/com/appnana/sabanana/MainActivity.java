@@ -52,23 +52,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         this.model = new Classifier(this, "model.tflite", "labels.txt", TFliteModel.Device.CPU, 4);
         this.imageView = this.findViewById(R.id.imageView);
-        final ListView list = findViewById(R.id.list);
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("JAVA");
-        arrayList.add("ANDROID");
-        arrayList.add("C Language");
-        arrayList.add("CPP Language");
-        arrayList.add("Go Language");
-        arrayList.add("AVN SYSTEMS");
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
-        list.setAdapter(arrayAdapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String clickedItem=(String) list.getItemAtPosition(position);
-                Toast.makeText(MainActivity.this,clickedItem,Toast.LENGTH_LONG).show();
-            }
-        });
     }
 
     public void btnLoadImage(View view) {
@@ -94,9 +77,28 @@ public class MainActivity extends AppCompatActivity {
                 FileDescriptor fd = inputPFD.getFileDescriptor();
                 Bitmap image = BitmapFactory.decodeFileDescriptor(fd);
                 List<Recognition> recognitions = model.runInference(image);
+                final ListView list = findViewById(R.id.list);
+                ArrayList<String> arrayList = new ArrayList<>();
+//                arrayList.add("JAVA");
+//                arrayList.add("ANDROID");
+//                arrayList.add("C Language");
+//                arrayList.add("CPP Language");
+//                arrayList.add("Go Language");
+//                arrayList.add("AVN SYSTEMS");
+
                 for(Recognition rec: recognitions){
-                    Toast.makeText(this, String.format("%s - %f",rec.getTitle(), rec.getConfidence()), Toast.LENGTH_LONG).show();
+                    arrayList.add(String.format("%s - %f",rec.getTitle(), rec.getConfidence()));
+//                    Toast.makeText(this,), Toast.LENGTH_LONG).show();
                 }
+                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
+                list.setAdapter(arrayAdapter);
+                list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        String clickedItem=(String) list.getItemAtPosition(position);
+//                        Toast.makeText(MainActivity.this,clickedItem,Toast.LENGTH_LONG).show();
+                    }
+                });
                 Log.d("DEBUG", String.valueOf(image.getHeight()));
                 this.imageView.setImageBitmap(image);
                 inputPFD.close();
