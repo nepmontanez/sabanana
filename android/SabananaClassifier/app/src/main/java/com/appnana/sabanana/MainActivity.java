@@ -14,6 +14,9 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.appnana.sabanana.tflite.Classifier;
@@ -33,6 +36,7 @@ import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,12 +52,32 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         this.model = new Classifier(this, "model.tflite", "labels.txt", TFliteModel.Device.CPU, 4);
         this.imageView = this.findViewById(R.id.imageView);
+        final ListView list = findViewById(R.id.list);
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("JAVA");
+        arrayList.add("ANDROID");
+        arrayList.add("C Language");
+        arrayList.add("CPP Language");
+        arrayList.add("Go Language");
+        arrayList.add("AVN SYSTEMS");
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
+        list.setAdapter(arrayAdapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String clickedItem=(String) list.getItemAtPosition(position);
+                Toast.makeText(MainActivity.this,clickedItem,Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
-    public void btnLoadImageClick(View view) {
+    public void btnLoadImage(View view) {
         requestFileIntent = new Intent(Intent.ACTION_PICK);
         requestFileIntent.setType("image/jpg");
         this.startActivityForResult(requestFileIntent, 0);
+    }
+
+    public void btnPredictImage(View view) {
     }
 
     @SuppressLint("DefaultLocale")
