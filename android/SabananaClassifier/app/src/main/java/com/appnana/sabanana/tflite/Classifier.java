@@ -36,7 +36,7 @@ public class Classifier extends TFliteModel {
      */
     private static final float PROBABILITY_MEAN = 0.0f;
     private static final float PROBABILITY_STD = 1.0f;
-    protected static final int MAX_RESULTS = 4;
+    protected static final int MAX_RESULTS = 5;
 
     public Classifier(Activity activity, String modelPath, String labelsMap, Device device, int numThreads) {
         super(activity, modelPath, labelsMap, device, numThreads);

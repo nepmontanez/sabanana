@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.model = new Classifier(this, "model.tflite", "labels.txt", TFliteModel.Device.CPU, 4);
+        this.model = new Classifier(this, "model.tflite", "labels.txt", TFliteModel.Device.CPU, 6);
         this.imageView = this.findViewById(R.id.imageView);
     }
 
