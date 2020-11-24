@@ -8,8 +8,7 @@ In a study [[2]](https://www.researchgate.net/publication/329268613_Effect_of_ma
 
 ### System Architecture & Process
 
-Trust the process
-![System Architecture](\docs\SystemArchitecture.png?raw=true "System Architecture")
+![System Architecture](/docs/SystemArchitecture.png?raw=true "System Architecture")
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 1. System Architecture \
 .gif of photobox in Autocad
 Mention CNN problem in acquiring images in Standford site
