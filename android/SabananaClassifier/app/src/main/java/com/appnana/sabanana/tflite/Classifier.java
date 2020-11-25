@@ -1,4 +1,4 @@
-package com.appnana.sabanana.tflite;
+    package com.appnana.sabanana.tflite;
 
 
 import android.app.Activity;
@@ -123,3 +123,4 @@ public class Classifier extends TFliteModel {
         return imageProcessor.process(inputImageBuffer);
     }
 }
+

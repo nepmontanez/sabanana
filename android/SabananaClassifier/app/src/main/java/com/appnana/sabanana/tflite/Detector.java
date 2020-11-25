@@ -80,7 +80,7 @@ public class Detector extends TFliteModel {
                             Math.max(0, Math.min(outputLocations[0][i][0],1) * this.imageSizeX),
                             Math.max(0, Math.min(outputLocations[0][i][3],1) * this.imageSizeX),
                             Math.max(0, Math.min(outputLocations[0][i][2],1) * this.imageSizeX)
-                            );
+                    );
 
             recognitions.add(
                     new Recognition(

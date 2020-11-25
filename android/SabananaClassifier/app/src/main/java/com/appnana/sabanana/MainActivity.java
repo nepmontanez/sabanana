@@ -35,6 +35,7 @@ import org.tensorflow.lite.support.model.Model;
 import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.model = new Classifier(this, "model.tflite", "labels.txt", TFliteModel.Device.CPU, 6);
+        this.model = new Classifier(this, "model.tflite", "labels.txt", TFliteModel.Device.CPU, 4);
         this.imageView = this.findViewById(R.id.imageView);
     }
 
@@ -79,16 +80,9 @@ public class MainActivity extends AppCompatActivity {
                 List<Recognition> recognitions = model.runInference(image);
                 final ListView list = findViewById(R.id.list);
                 ArrayList<String> arrayList = new ArrayList<>();
-//                arrayList.add("JAVA");
-//                arrayList.add("ANDROID");
-//                arrayList.add("C Language");
-//                arrayList.add("CPP Language");
-//                arrayList.add("Go Language");
-//                arrayList.add("AVN SYSTEMS");
 
                 for(Recognition rec: recognitions){
-                    arrayList.add(String.format("%s - %f",rec.getTitle(), rec.getConfidence()));
-//                    Toast.makeText(this,), Toast.LENGTH_LONG).show();
+                    arrayList.add(String.format("%s - %.2f%%", rec.getTitle(), (rec.getConfidence() * 100)));
                 }
                 ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
                 list.setAdapter(arrayAdapter);
