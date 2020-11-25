@@ -1,5 +1,5 @@
-Seconds(JK)
-Soft Brown(H)
-Soft Second(G)
-Streaky three(S3)
-Streaky two(S2)
+Stage 1 [All Green]
+Stage 2 [Green Turning Yellow]
+Stage 3 [Greenish Yellow]
+Stage 4 [Yellow with Green Tip]
+Stage 5 [Yellow with Brown Flecks]
