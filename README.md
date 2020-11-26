@@ -6,7 +6,7 @@ Saba *(Musa balbisiana)* is a banana cultivar which are emerged and indigenous i
 
 In a study [[2]](https://www.researchgate.net/publication/329268613_Effect_of_maturity_on_in_vitro_starch_digestibility_of_Saba_banana_Musa_%27saba%27_Musa_acuminata_x_Musa_balbisiana) (see Figure 1), mentioned that the Diamond Star Agro-Products Inc., Taguig City, Philippines have a commercial unripe Saba bananas and they will ripen it to 5 different maturity stages for quality classification — all green (stage 1), green but turning yellow (stage 2), greenish yellow (stage 3), yellow with green tips (stage 4), and yellow with brown flecks (stage 5) Figure 1). Owing the lack of instruments for an objective measurement of saba banana quality classification have  to be done by visual inspection, which is time-consuming and costly hence, the purpose of this system.
 
-![sabanana stages](/docs/SabaFiveStages.PNG?raw=true "sabanana stages") \
+![Saba five(5) stages](/docs/SabaFiveStages.PNG?raw=true "Saba five(5) stages") \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 1. Five (5) stages of Saba  
 
 ### System Architecture & Process

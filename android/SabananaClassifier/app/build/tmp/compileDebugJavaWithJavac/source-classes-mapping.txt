@@ -1,0 +1,20 @@
+com/appnana/sabanana/tflite/Detector.java
+ com.appnana.sabanana.tflite.Detector
+com/appnana/sabanana/tflite/TFliteModel.java
+ com.appnana.sabanana.tflite.TFliteModel
+ com.appnana.sabanana.tflite.TFliteModel$1
+ com.appnana.sabanana.tflite.TFliteModel$Device
+com/appnana/sabanana/BuildConfig.java
+ com.appnana.sabanana.BuildConfig
+com/appnana/sabanana/tflite/Recognition.java
+ com.appnana.sabanana.tflite.Recognition
+com/appnana/sabanana/tflite/Classifier.java
+ com.appnana.sabanana.tflite.Classifier
+ com.appnana.sabanana.tflite.Classifier$1
+com/appnana/sabanana/MainActivity.java
+ com.appnana.sabanana.MainActivity
+ com.appnana.sabanana.MainActivity$1
+com/appnana/sabanana/ml/Model.java
+ com.appnana.sabanana.ml.Model
+ com.appnana.sabanana.ml.Model$1
+ com.appnana.sabanana.ml.Model$Outputs
