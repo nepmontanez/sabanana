@@ -28,4 +28,6 @@ Customize VGG model
 
 ### Conclusion & Recommendation
 
-### Repo References
+### Acknowledgements & Repo References:
+* https://github.com/haruiz/AIPilipinas-Tflite
+* [Flower_Classification_with_TFLite_Model_Maker.ipynb](https://colab.research.google.com/github/tensorflow/examples/blob/master/lite/codelabs/flower_classification/ml/Flower_Classification_with_TFLite_Model_Maker.ipynb#scrollTo=w-VDriAdsowu)
