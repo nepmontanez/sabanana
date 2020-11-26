@@ -31,9 +31,9 @@ Customize VGG model
 
 
 ### Conclusion & Recommendation
-
-### APK installation and Train & Test data images
-
+Optimize TFLite model with the data classify to the certified employee of Diamond Star Agro-Products Inc.
+### Install debug APK and Test sabanana images
+1. Download the diawi link here (expiration date: ) or download the repo app-debug.apk location [here](https://github.com/nepmontanez/sabanana/blob/main/android/SabananaClassifier/app/build/outputs/apk/debug/app-debug.apk)
 2. Download any stage of the sabanana [here.](https://drive.google.com/drive/folders/1WTd0O0yl8tlv3eg4AXFwDrMlcFSIbvnT)
 
 ### Acknowledgements & Repo References:
