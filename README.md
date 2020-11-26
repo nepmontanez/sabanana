@@ -28,6 +28,14 @@ Customize VGG model
 
 ### Conclusion & Recommendation
 
+### APK Installation & All Access to Train & Test Data Images
+
 ### Acknowledgements & Repo References:
 * https://github.com/haruiz/AIPilipinas-Tflite
 * [Flower_Classification_with_TFLite_Model_Maker.ipynb](https://colab.research.google.com/github/tensorflow/examples/blob/master/lite/codelabs/flower_classification/ml/Flower_Classification_with_TFLite_Model_Maker.ipynb#scrollTo=w-VDriAdsowu)
+
+### Softwares & Technologies used
+* [Autocad 30 Day Free Trial](https://www.autodesk.com/products/autocad/free-trial?support=ADVANCED)
+* [Google Colab](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_for_deep_learning/l01c01_introduction_to_colab_and_python.ipynb)
+* [Python Tensorflow](https://www.tensorflow.org/api_docs/python/tf)
+* [Android Studio](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiTqazNoKDtAhUSrJYKHRyOAHMYABAAGgJ0bA&ohost=www.google.com&cid=CAESQOD2AZ6OOar0hfMGS_2FivLqtWL7WDFZO0Ti6qpBWJJ8K5jRcK96pGs52tw_-4P7xTHlDyECzaEzVPA94-fOJHc&sig=AOD64_3_GS6dGOpThU7djb-CqZH8LWOxvw&q&adurl&ved=2ahUKEwiHkqbNoKDtAhViHKYKHWnPAj4Q0Qx6BAgaEAE)
