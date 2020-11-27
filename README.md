@@ -16,8 +16,8 @@ In a study [[2]](https://www.researchgate.net/publication/329268613_Effect_of_ma
 
 ### Image Acquisition 
 In a meanwhile a study [[7]](https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-25/issue-6/061410/Combining-multiple-features-for-color-texture-classification/10.1117/1.JEI.25.6.061410.short?SSO=1) further explained that the different viewpoint and illumination of the acquired digital image will greatly affect the classification accuracy of the system. So, in this case, Saba banana sample images must be acquired in a controlled environment using an objective instrument ― a customized photo box (see Figure 3 & 4 - more additional info [here](https://drive.google.com/drive/folders/1zj13Nhj801q7b42Yt_YwAsmAwzhU0X81?usp=sharing)) and a Samsung A7 camera in 1:1 ratio (4240x4240 pixels) with a distance of 18.5 cm above the sample and taken one pieces at a time as shown in a [video & images](https://drive.google.com/drive/folders/1hqCVoZ7U2_7YLUU3F9PUOgk7svjTfIt3?usp=sharing).
-![PhotoBox Design Layout](docs\PhotoBoxDesign1.PNG?raw=true "PhotoBox Design Layout") \
-![PhotoBox Design Layout](docs\PhotoBoxDesign2.PNG?raw=true "PhotoBox Design Layout") \
+![PhotoBox Design Layout](/docs/PhotoBoxDesign1.PNG?raw=true "PhotoBox Design Layout")
+![PhotoBox Design Layout](/docs/PhotoBoxDesign2.PNG?raw=true "PhotoBox Design Layout")
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 3 & 4. PhotoBox Design Layout 1 & 2 
 
 ### Testing Phase & Performance Evaluation
