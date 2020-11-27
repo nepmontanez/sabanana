@@ -1,6 +1,6 @@
 # sabanana
 
-System logo & finalize the model
+![app-icon](/docs/app-icon.png?raw=true "app-icon") 
 
 Saba *(Musa balbisiana)* is a banana cultivar which are emerged and indigenous in the Philippines. It is considered as one of the core agricultural products in the country in terms of production and trade. The processed products derived from saba are continues to make a stronghold in both domestic and international markets. Also, it is widely useful in Filipino cuisine/deserts and in fact often used to extend or substitute staple food such as rice and corn [[1]](http://cagayandeoro.da.gov.ph/wp-content/uploads/2013/04/SABA-BANANA-PRODUCTION-GUIDE.pdf). 
 
