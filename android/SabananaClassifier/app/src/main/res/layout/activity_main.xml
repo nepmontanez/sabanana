@@ -10,8 +10,8 @@
         android:id="@+id/textViewActualTitle"
         android:layout_width="165dp"
         android:layout_height="33dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
         android:text="Actual Stage:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,11 +19,12 @@
 
     <TextView
         android:id="@+id/textViewActualStage"
-        android:layout_width="165dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="44dp"
-        android:textSize="18sp"
+        android:layout_width="317dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -52,9 +53,9 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <LinearLayout
-        android:layout_width="283dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="124dp"
+        android:layout_width="336dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="115dp"
         android:orientation="vertical"
         android:scrollbarSize="1dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +72,7 @@
         android:id="@+id/textView"
         android:layout_width="155dp"
         android:layout_height="30dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="84dp"
         android:text="Predictions:"
         android:textSize="18sp"
