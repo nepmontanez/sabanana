@@ -8,6 +8,8 @@ com/appnana/sabanana/BuildConfig.java
  com.appnana.sabanana.BuildConfig
 com/appnana/sabanana/tflite/Recognition.java
  com.appnana.sabanana.tflite.Recognition
+com/appnana/sabanana/UriUtils.java
+ com.appnana.sabanana.UriUtils
 com/appnana/sabanana/tflite/Classifier.java
  com.appnana.sabanana.tflite.Classifier
  com.appnana.sabanana.tflite.Classifier$1

@@ -2,14 +2,19 @@ package com.appnana.sabanana;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.loader.content.CursorLoader;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
+import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -17,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.appnana.sabanana.tflite.Classifier;
@@ -32,6 +38,7 @@ import org.tensorflow.lite.support.image.ops.ResizeWithCropOrPadOp;
 import org.tensorflow.lite.support.metadata.MetadataExtractor;
 import org.tensorflow.lite.support.model.Model;
 
+import java.io.File;
 import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -44,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private Intent requestFileIntent;
     private ParcelFileDescriptor inputPFD;
     private ImageView imageView;
+    private TextView actualGrade;
     private Classifier model;
 
 
@@ -61,9 +69,6 @@ public class MainActivity extends AppCompatActivity {
         this.startActivityForResult(requestFileIntent, 0);
     }
 
-    public void btnPredictImage(View view) {
-    }
-
     @SuppressLint("DefaultLocale")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent resultIntent) {
@@ -74,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
             // Get the file's content URI from the incoming Intent
             try {
                 Uri returnUri = resultIntent.getData();
+                File fullFilePath = new File(UriUtils.getPathFromUri(this, returnUri));
+                String stageName = fullFilePath.getParent().substring(fullFilePath.getParent().lastIndexOf(File.separator) + 1);;
+                Log.d("FILEPATH", stageName);
+                this.actualGrade = this.findViewById(R.id.textViewActualStage);
+                this.actualGrade.setText(stageName);
                 inputPFD = getContentResolver().openFileDescriptor(returnUri, "r");
                 FileDescriptor fd = inputPFD.getFileDescriptor();
                 Bitmap image = BitmapFactory.decodeFileDescriptor(fd);
@@ -90,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         String clickedItem=(String) list.getItemAtPosition(position);
-//                        Toast.makeText(MainActivity.this,clickedItem,Toast.LENGTH_LONG).show();
                     }
                 });
                 Log.d("DEBUG", String.valueOf(image.getHeight()));

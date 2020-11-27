@@ -28,13 +28,14 @@ Prediction of number of days to decay
 Customize VGG model
 
 ### Testing Phase & Performance Evaluation
-
+After testing the tflite model with the testing dataset of 100 images (20 images per stage), the classifier achieved an 68% overall accuracy in correctly classifying the Saba banana sample images. Detailed information here in [excel file](https://drive.google.com/file/d/1CRg0NVjT6RguY_hnjwNerKUDtWSlAr0b/view?usp=sharing)
 
 ### Conclusion & Recommendation
 Optimize TFLite model with the data classify to the certified employee of Diamond Star Agro-Products Inc.
+
 ### Install debug APK and Test Saba images
-1. Download the apk using the diawi link here (link expiration date: ) or download the repo app-debug.apk location [here](https://github.com/nepmontanez/sabanana/blob/main/android/SabananaClassifier/app/build/outputs/apk/debug/app-debug.apk)
-2. Then, access the any stages of test images of sabanana [here.](https://drive.google.com/drive/folders/1WTd0O0yl8tlv3eg4AXFwDrMlcFSIbvnT)
+1. Download the apk using the diawi link - https://i.diawi.com/DtmnMy (link expiration date: ) or just download the repo [app-debug.apk](https://github.com/nepmontanez/sabanana/blob/main/android/SabananaClassifier/app/build/outputs/apk/debug/app-debug.apk)
+2. Then, the access of the stages of test images of sabanana [here.](https://drive.google.com/drive/folders/1WTd0O0yl8tlv3eg4AXFwDrMlcFSIbvnT)
 
 ### Acknowledgements & Repo References:
 * https://github.com/haruiz/AIPilipinas-Tflite

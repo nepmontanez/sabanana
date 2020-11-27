@@ -6,13 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textViewActualTitle"
+        android:layout_width="165dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:text="Actual Stage:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewActualStage"
+        android:layout_width="165dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="44dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="400dp"
-        android:layout_height="260dp"
+        android:layout_width="352dp"
+        android:layout_height="258dp"
         android:layout_marginTop="28dp"
         android:background="#696969"
-        android:rotation="90"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -23,7 +43,7 @@
         android:id="@+id/loadBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="368dp"
+        android:layout_marginTop="308dp"
         android:background="#FFFFFF"
         android:onClick="btnLoadImage"
         android:text="Load &amp; Predict Image"
@@ -32,8 +52,8 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <LinearLayout
-        android:layout_width="280dp"
-        android:layout_height="235dp"
+        android:layout_width="283dp"
+        android:layout_height="171dp"
         android:layout_marginTop="124dp"
         android:orientation="vertical"
         android:scrollbarSize="1dp"
@@ -49,11 +69,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="166dp"
-        android:layout_height="54dp"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="84dp"
-        android:text="Predictions"
+        android:text="Predictions:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
