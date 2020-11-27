@@ -32,14 +32,14 @@ Customize VGG model
 
 ### Conclusion & Recommendation
 Optimize TFLite model with the data classify to the certified employee of Diamond Star Agro-Products Inc.
-### Install debug APK and Test sabanana images
-1. Download the diawi link here (expiration date: ) or download the repo app-debug.apk location [here](https://github.com/nepmontanez/sabanana/blob/main/android/SabananaClassifier/app/build/outputs/apk/debug/app-debug.apk)
-2. Download any stage of the sabanana [here.](https://drive.google.com/drive/folders/1WTd0O0yl8tlv3eg4AXFwDrMlcFSIbvnT)
+### Install debug APK and Test Saba images
+1. Download the apk using the diawi link here (link expiration date: ) or download the repo app-debug.apk location [here](https://github.com/nepmontanez/sabanana/blob/main/android/SabananaClassifier/app/build/outputs/apk/debug/app-debug.apk)
+2. Then, access the any stages of test images of sabanana [here.](https://drive.google.com/drive/folders/1WTd0O0yl8tlv3eg4AXFwDrMlcFSIbvnT)
 
 ### Acknowledgements & Repo References:
 * https://github.com/haruiz/AIPilipinas-Tflite
 * [Flower_Classification_with_TFLite_Model_Maker.ipynb](https://colab.research.google.com/github/tensorflow/examples/blob/master/lite/codelabs/flower_classification/ml/Flower_Classification_with_TFLite_Model_Maker.ipynb#scrollTo=w-VDriAdsowu)
-* Another tensoflow example
+* [TensorFlow Lite Android image classification example](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android)
 
 ### Softwares & Technologies used
 * [Autocad 30 Day Free Trial](https://www.autodesk.com/products/autocad/free-trial?support=ADVANCED)
